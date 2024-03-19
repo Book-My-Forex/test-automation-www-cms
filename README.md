@@ -1,2 +1,2 @@
-# test-automation-www-cms
-this project will be execute only on prod
+# test-automation-www
+Selenium based project for www workflow automation
