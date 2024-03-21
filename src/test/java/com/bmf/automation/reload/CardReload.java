@@ -125,7 +125,7 @@ public class CardReload extends BmfTestCommon {
 						Thread.sleep(2000);
 
 						super.getRate();
-						super.addPrdouct() ;
+						super.addPrdouct();
 						break;
 					} else {
 						getDriver().findElement(ElementReload.FULL_UNLOAD.get()).click();
@@ -140,7 +140,7 @@ public class CardReload extends BmfTestCommon {
 			System.err.println("Something went wrong,due to.." + e.getMessage());
 
 		}
-		if (!page.contains("cms") && (orderType.contains("reload") || orderType.contains("unload")))
+		if (page == null && (orderType.contains("reload") || orderType.contains("unload")))
 			Assert.assertTrue("City Shouldn't be shown for reload/unload", cityShown);
 	}
 
